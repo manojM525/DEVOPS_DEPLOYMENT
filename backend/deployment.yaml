@@ -16,4 +16,7 @@ spec:
       - name: backend
         image: manojm525/backend:latest
         ports:
-        - containerPort: 80
+        - containerPort: 5000
+        env:
+          - name: PORT
+            value: "5000"
