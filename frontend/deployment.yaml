@@ -17,3 +17,8 @@ spec:
         image: manojm525/frontend:latest
         ports:
         - containerPort: 80
+        env:
+            # Not strictly needed because React builds are static,
+            # but good for documentation and dynamic cases
+            - name: REACT_APP_API_URL
+              value: "http://backend:5000"
