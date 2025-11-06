@@ -9,14 +9,14 @@ spec:
     - host: myapp.roadtofuture.shop
       http:
         paths:
-          - path: /(.*)
+          - path: /
             pathType: Prefix
             backend:
               service:
                 name: frontend
                 port:
                   number: 80
-          - path: /api/(.*)
+          - path: /api
             pathType: Prefix
             backend:
               service:
