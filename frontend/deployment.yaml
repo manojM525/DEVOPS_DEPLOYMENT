@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: manojm525/frontend:latest
+        image: manojm525/frontend:k8
         ports:
         - containerPort: 80
         env:
