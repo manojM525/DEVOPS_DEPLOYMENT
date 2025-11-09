@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: fullstack-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
     - host: myapp.roadtofuture.shop
@@ -16,7 +16,7 @@ spec:
                 name: frontend
                 port:
                   number: 80
-          - path: /api
+          - path: /api/
             pathType: Prefix
             backend:
               service:
