@@ -14,11 +14,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: manojm525/frontend:k8
+        image: manojm525/frontend:ingress
         ports:
         - containerPort: 80
-        env:
-            # Not strictly needed because React builds are static,
-            # but good for documentation and dynamic cases
-            - name: REACT_APP_API_URL
-              value: "http://backend:5000"
