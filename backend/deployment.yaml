@@ -13,10 +13,10 @@ spec:
         app: backend
     spec:
       containers:
-      - name: backend
-        image: manojm525/backend:latest
-        ports:
-        - containerPort: 5000
-        env:
-          - name: PORT
-            value: "5000"
+        - name: backend
+          image: manojm525/backend:1.0.0
+          ports:
+            - containerPort: 5000
+          env:
+            - name: PORT
+              value: "5000"
